@@ -1,0 +1,63 @@
+/* -----------------------------------
+Template:  Theme Name
+
+NOTE: This is Slider style file. All Slider related style included in this file.
+
+--------------------------------------*/
+.work-headline{
+	font-weight: 700;
+}
+.work-item{
+	padding: 1em 0;
+}
+.work-sidebar{
+	text-align: right;
+    margin: 0;
+    padding-left: 0;
+}
+
+.work-main{
+    border-left: 2px solid #cacaca;
+}
+.work-date{
+	font-size: 0.9em;
+	font-weight: bold;
+}
+.work-location{
+	font-size: 0.8em;
+	text-transform: uppercase;
+}
+.work-role{
+	font-weight: 700;
+}
+.work-team{
+	font-weight: 600;
+}
+.work-description{
+	font-weight: 500;
+}
+.work-tasks{
+}
+
+.work-task{
+	line-height: 1.3em;
+	margin-bottom: 0.3em;
+	text-indent: -1em;
+    margin-left: 1em;
+
+}
+.work-task .work-task{
+	margin-left: 2em;
+}
+
+.work-task:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    font-size: 0.75em;
+    margin-right: 0.6em;
+    font-weight: 100;
+}
+
+.work-task .work-task:before {
+	color:#999;
+}

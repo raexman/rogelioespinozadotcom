@@ -1,0 +1,170 @@
+<h4>Collaborators</h4>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/braulio-estrada-2536364a/">
+			<img class="media-object" src="../img/collaborators/bestrada.jpg" alt="Braulio Estrada">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/braulio-estrada-2536364a/">
+			<p class="media-heading">Braulio Estrada</p>
+			<p class="media-description">UI &amp; Art</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/paulina-contreras-aguirre-b19b1011b/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Paulina Contreras">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/paulina-contreras-aguirre-b19b1011b/">
+			<p class="media-heading">Paulina Contreras</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/maritza-lozano-a4497949/">
+			<img class="media-object" src="../img/collaborators/mlozano.jpg" alt="Maritza Lozano">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/maritza-lozano-a4497949/">
+			<p class="media-heading">Maritza Lozano</p>
+			<p class="media-description">Art</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/andrea-hernandez-00079a28/">
+			<img class="media-object" src="../img/collaborators/ahernandez.jpg" alt="Andrea Hernandez">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/andrea-hernandez-00079a28/">
+			<p class="media-heading">Andrea Hernandez</p>
+			<p class="media-description">Art</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/imanfayek/">
+			<img class="media-object" src="../img/collaborators/ifayek.jpg" alt="Iman Fayek">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/imanfayek/">
+			<p class="media-heading">Iman Fayek</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/izayacity/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Francis Yang">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/izayacity/">
+			<p class="media-heading">Francis Yang</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/dylan-faust-400935112/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Dylan Faust">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/dylan-faust-400935112/">
+			<p class="media-heading">Dylan Faust</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/rayjofu/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Rayjo Fu">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/rayjofu/">
+			<p class="media-heading">Rayjo Fu</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/zheng-guo-98102b34/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Zheng Guo">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/zheng-guo-98102b34/">
+			<p class="media-heading">Zheng Guo</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/junrui-huang-024832118/">
+			<img class="media-object" src="../img/collaborators/pcontreras.jpg" alt="Roy Huang">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/junrui-huang-024832118/">
+			<p class="media-heading">Roy Huang</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="#">
+			<img class="media-object" src="../img/collaborators/kvetagiri.jpg" alt="Kireeti Vetagiri">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="#">
+			<p class="media-heading">Kireeti Vetagiri</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/zejun-yuan-b02213b6/">
+			<img class="media-object" src="../img/collaborators/zyuan.jpg" alt="Zejun Yuan">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/zejun-yuan-b02213b6/">
+			<p class="media-heading">Zejun Yuan</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
+<div class="media collaborator">
+	<div class="media-left">
+		<a target="_blank" href="https://www.linkedin.com/in/eleonorahackman/">
+			<img class="media-object" src="../img/collaborators/ehackman.jpg" alt="Eleonora Hackman">
+		</a>
+	</div>
+	<div class="media-body">
+		<a target="_blank" href="https://www.linkedin.com/in/eleonorahackman/">
+			<p class="media-heading">Eleonora Hackman</p>
+			<p class="media-description">Voice Over</p>
+		</a>
+	</div>
+</div>
