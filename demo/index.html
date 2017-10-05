@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="author"  content="Rogelio A. Espinoza"/>
+<meta name="designer" content="RAEX Graphics" />
+<meta name="description" content="RAEX Graphics is the graphic design venture of Rogelio A. Espinoza." />
+<meta name="keywords" content="graphic design, web design, design, raex graphics, dise&ntilde;o gr&aacute;fico, diseno grafico, diseno web, diseno de paginas, diseno de logos, logo design, brand design, branding, identity design, web developement, desarrollo web, desarrollo de sitios web" />
+<title>RAEX Graphics</title>
+<link href="css/reset.css" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="booklet/jquery.booklet.1.2.0.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script>
+<script src="booklet/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="booklet/jquery.booklet.1.2.0.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script><script>
+$(document).ready(function() {
+  // Handler for .ready() called.
+	$('.panel').hover(
+	function(){
+		$(this).animate({opacity:1},450);
+		},
+	function(){
+		$(this).animate({opacity:0.95},450);
+	}
+	);
+	$('#hero').hover(
+	function()
+	{
+		$('#aboutmebubble').fadeToggle(250);
+		$('#boom').fadeToggle(250);
+	},
+	function()
+	{
+		$('#aboutmebubble').fadeToggle(250);
+		$('#boom').fadeToggle(250);
+	});
+	$('#hero').click(
+	function()
+	{
+		$('#shoutbox').append("<div id='aboutUs'><p>Born in the great state of California and raised in the sun-abused but delicious chinese food producing Mexicali.  Since I have memory, I've always loved drawing, especially superheroes. I basically learned how to draw thanks to Batman and Goku. </p><p>Later I fell in love with my middle school sweetheart, Macromedia Flash. When other students were making presentations in simple old PowerPoint (yeah, yeah, I still use it too) I was making mine in Flash.</p><p>Sadly Flash and I broke up when I went to high school. We didn't see each other again until I went to college. In high school I got seduced by Adobe Photoshop. Oh! The infinite possibilities of graphic design! After I had to move to Tijuana, I took Flash again, but as an illustration tool, I strated making logos and cartoons in it.</p></div>");
+		$('#shoutbox').css({'width':480,'height': 400, 'background-image':'url(img/shoutboxlarge.png)', 'background-position':'0px 0px', 'z-index':9} );
+		$('#shoutbox img').css({'margin-top':53, 'margin-bottom':-44});
+		$('#shoutbox').click(function()
+		{
+			$(this).css({
+					'width':433,
+	'height':'auto',
+	'background-image':'url(img/shoutbox.png)',
+	'background-repeat':'no-repeat',
+	'background-position': '30px 0px',
+	'bottom':0,
+	'right':0,
+	'z-index':5,
+	'color':'#fff'});
+		$('#shoutbox img').css({'margin-top':34, 'margin-bottom':0});
+	$(this).children().remove('#aboutUs');
+
+		});
+	});
+//FANCYBOX
+	$('a.ilustracion').fancybox();
+	$('a.web').fancybox();
+	$('a.foto').fancybox();
+	$('a.literatura').fancybox();
+	$('a.batmanposter').fancybox({
+'titlePosition' : 'over'
+});
+	$('a.noalaleche').fancybox();
+	$('a#darthVader').fancybox();
+	$('a#plmanualBtn').fancybox();
+	$('a.brownieman').fancybox();
+	$('a.yopixel').fancybox();
+	$('a.pizzaandloveBtn').fancybox();
+	$('a.ids').fancybox();
+	$('a.cgBtn').fancybox();
+	$('a#cgSalas').fancybox({
+			'padding'		: 0,
+			'autoScale'		: false,
+			'transitionIn'	: 'none',
+			'transitionOut'	: 'none',
+			'title'			: this.title,
+			'width'		: 680,
+			'height'		: 495,
+			'type'			: 'swf',
+			'swf'			: {
+			   	 'wmode'		: 'transparent',
+				'allowfullscreen'	: 'true'
+			}
+		});
+	$('a.bannerBtn').fancybox({
+								'width' : '75%',
+								'height' : '100%',
+								'autoScale' : false,
+								'transitionIn' : 'none',
+								'transitionOut' : 'none',
+								'type' : 'iframe'
+								}); 
+$('a#newcoreBtn').click(function() {
+	$.fancybox({
+			'padding'		: 0,
+			'autoScale'		: false,
+			'transitionIn'	: 'none',
+			'transitionOut'	: 'none',
+			'title'			: this.title,
+			'width'		: 680,
+			'height'		: 495,
+			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+			'type'			: 'swf',
+			'swf'			: {
+			   	 'wmode'		: 'transparent',
+				'allowfullscreen'	: 'true'
+			}
+		});
+
+	return false;
+});
+$("a#diosescaen").click(function() {
+	$.fancybox({
+			'padding'		: 0,
+			'autoScale'		: false,
+			'transitionIn'	: 'none',
+			'transitionOut'	: 'none',
+			'title'			: this.title,
+			'width'		: 680,
+			'height'		: 495,
+			'href'			: this.href.replace(new RegExp("watch\\?v=", "i"), 'v/'),
+			'type'			: 'swf',
+			'swf'			: {
+			   	 'wmode'		: 'transparent',
+				'allowfullscreen'	: 'true'
+			}
+		});
+
+	return false;
+});
+//LINKS DE PÁGINAS
+	$('a#multimediaBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(4); //go to page 3
+  });
+	$('a#pizzaandloveBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(5); //go to page 3
+  });
+	$('a#bannersBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(6); //go to page 3
+  });
+	$('a#cgBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(7); //go to page 3
+  });
+	$('a#logosBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(8); //go to page 3
+  });
+	$('a#logosBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(4); //go to page 3
+  });
+	$('a#logosBtn').click(function(e){
+        e.preventDefault();
+        $('#mybook').booklet(4); //go to page 3
+  });
+		
+});
+</script>
+</head>
+<body>
+<div id="prueba" class="tooltip">
+  <H1>PRUEBA</H1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nulla massa, consequat quis interdum vitae, ornare eget nisl. Praesent blandit neque vel quam aliquam id aliquet sapien aliquam. Nullam cursus mauris id tortor ullamcorper ut ultricies tortor vulputate. Integer aliquet ornare erat, vitae suscipit leo gravida vel. </p>
+</div>
+<div id="logo"> <img src="img/RAEX-----logo.png" height="" />
+  <p>Raex Graphics</p>
+</div>
+<div id="mybook">
+  <div class="b-load">
+    <div id="cover" class="sheet">
+      <div id="stamp"> <img id="stamp" src="img/stamp.png" width="70" height="69" /> <img id="stampText" src="img/stampText.png" width="66" height="90" /> </div>
+      <div id="navMenu"></div>
+      <img id="authorcode" src="img/authorcode.gif" width="59" height="72" />
+      <div id="coverLogo"> <img src="img/RAEX-----logo.png" />
+        <h3>Raex Graphics</h3>
+      </div>
+      <div id="boom" class="panel">
+        <h3>Ask for a quote</h3>
+        <a href="#/page/3"><img id="boomMsg" src="img/quoteMsg.png" width="128" height="53" alt="Ask For A Quote" /></a> </div>
+      <div id="notebox"> <img id="noteboxTitle" src="img/noteboxTitle.png" width="72" height="24" alt="Lo Nuevo" />
+        <p>JAGO Decor Store en proceso.</p>
+        <h3>Lo nuevo:</h3>
+      </div>
+      <div id="aboutmebubble"></div>
+      <img id="hero" src="img/hero.png" width="378" height="499" alt="ZOMG! Es es superheroe más guapo: RAEXMAN!!"/> <img id="bgHero" src="img/bgHero.png" width="476" height="345" /> <img id="bgPlace" src="img/bgPlace.png" width="480" height="387" /> <img src="img/barcode.png" width="74" height="133" id="barcode" />
+      <div id="shoutbox"> <img id="shoutboxMsg" src="img/shoutMsg.png" width="320" height="39"  />
+        <h3>El Súper IDGD!</h3>
+      </div>
+    </div>
+    <div id="menu1" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="#"><img src="img/menuOneTopLeft.png" height="132" width="287" /></a> </div>
+        <div id="topRight" class="panel">
+          <div id="floatboxIlustracion" class="floatbox"><img src="img/floatbox/floatboxIlustracion.png" width="121" height="29" /></div>
+          <a href="proyectos/ilustracion/batmantoon.png" class="ilustracion" rel="ilustracion"><img src="img/menuOneTopRight.png" height="133" width="134"/></a> <a href="proyectos/ilustracion/batmantdktoon.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/jokerfulltoon.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/rolandom.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/earthsymphony.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/ryu.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/shakiradiabla.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/whysoserious.png" class="ilustracion" rel="ilustracion"></a> <a href="proyectos/ilustracion/jokertoon.png" class="ilustracion" rel="ilustracion"></a> </div>
+        <div id="middleLeft" class="panel">
+          <div id="floatboxMM" class="floatbox"><img src="img/floatbox/floatboxMM.png" width="104" height="29"/></div>
+          <a id="multimediaBtn" href="#"><img src="img/menuOneMiddleLeft.png" width="147" height="169" /></a> </div>
+        <div id="middleRight" class="panel">
+          <div id="floatboxPL" class="floatbox"><img src="img/floatbox/floatboxPL.png" width="104" height="29"/></div>
+          <a id="pizzaandloveBtn" href="#"><img src="img/menuOneMiddleRight.png" width="273" height="231" /></a> </div>
+        <div id="lowCenter" class="panel">
+          <div id="floatboxBanner" class="floatbox"><img src="img/floatbox/floatboxBanner.png" width="144" height="29"/></div>
+          <a id="bannersBtn" href="#"><img src="img/menuOneLowCenter.png" width="435" height="137"/></a> </div>
+        <div id="bottomLeft" class="panel">
+          <div id="floatboxWeb" class="floatbox"><img src="img/floatbox/floatboxWeb.png" width="121" height="29"/></div>
+          <a href="proyectos/web/pizzaandloveweb.png" class="web" rel="web"><img src="img/menuOneBottomLeft.png" width="302" height="215" /></a> <a href="proyectos/web/bajafunadventures.jpg" class="web" rel="web"></a> <a href="proyectos/web/revoluz.png" class="web" rel="web"></a> <a href="proyectos/web/jago.png" class="web" rel="web"></a> </div>
+        <div id="bottomRight" class="panel">
+          <div id="floatbox3D" class="floatbox"><img src="img/floatbox/floatbox3D.png" width="96" height="29"/></div>
+          <a id="cgBtn" href="#"><img src="img/menuOneBottomRight.png" width="118" height="215" /></a> </div>
+      </div>
+    </div>
+    <div id="menu2" class="sheet">
+      <div class="grid">
+        <div id="topCenter" class="panel">
+          <div id="floatboxFoto" class="floatbox"><img src="img/floatbox/floatboxFoto.png" width="99" height="30"/></div>
+          <a href="proyectos/fotografia/lolita01.jpg" class="foto" rel="foto"><img src="img/menuTwoTopCenter.png" width="437" height="152" /></a> <a href="proyectos/fotografia/lolita02.jpg" class="foto" rel="foto"></a> 
+          <!--<a href="proyectos/fotografia/lolita03.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/lolita04.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/lolita05.jpg" class="foto" rel="foto"></a>--> 
+          <a href="proyectos/fotografia/lolita06.jpg" class="foto" rel="foto"></a> 
+          <!--<a href="proyectos/fotografia/lolita07.jpg" class="foto" rel="foto"></a>--> 
+          <a href="proyectos/fotografia/lolita08.jpg" class="foto" rel="foto"></a> 
+          <!--<a href="proyectos/fotografia/lolita09.jpg" class="foto" rel="foto"></a>--> 
+          <a href="proyectos/fotografia/quiromancia01.jpg" class="foto" rel="foto"></a> 
+          <!--<a href="proyectos/fotografia/quiromancia02.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia03.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia04.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia05.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia06.jpg" class="foto" rel="foto"></a>--> 
+          <a href="proyectos/fotografia/quiromancia07.jpg" class="foto" rel="foto"></a> <a href="proyectos/fotografia/quiromancia08.jpg" class="foto" rel="foto"></a> <a href="proyectos/fotografia/quiromancia09.jpg" class="foto" rel="foto"></a> 
+          <!--<a href="proyectos/fotografia/quiromancia10.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia11.jpg" class="foto" rel="foto"></a>
+            <a href="proyectos/fotografia/quiromancia12.jpg" class="foto" rel="foto"></a>--> 
+          <a href="proyectos/fotografia/mushroom1.png" class="foto" rel="foto"></a> <a href="proyectos/fotografia/mushroom2.png" class="foto" rel="foto"></a> </div>
+        <div id="middleCenter" class="panel">
+          <div id="floatboxLogos" class="floatbox"><img src="img/floatbox/floatboxLogos.png" width="155" height="29"/></div>
+          <a id="logosBtn" href="#"><img src="img/menuTwoMiddleCenter.png" width="435" height="155" /></a> </div>
+        <div id="bottomLeft" class="panel"> <a href="proyectos/literatura/librofrontera.png" class="literatura" rel="literatura"><img src="img/menuTwoBottomLeft.png" width="137" height="354" /></a> <a href="proyectos/literatura/tintafrontera.png" class="literatura" rel="literatura"></a> <a href="proyectos/literatura/saulbassquijote.png" class="literatura" rel="literatura"></a> </div>
+        <div id="bottomCenter" class="panel"> <a href="proyectos/batmanposters/bane.png" class="batmanposter" rel="batmanposter"><img src="img/menuTwoBottomCenter.png" width="135" height="391" title="The Dark Knight Rises: Bane Poster" /></a> <a href="proyectos/batmanposters/blackmask.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/deadshot.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/deathstroke.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/mrfreeze.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/penguin.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/riddler.png" class="batmanposter" rel="batmanposter"></a> <a href="proyectos/batmanposters/scarface.png" class="batmanposter" rel="batmanposter"></a> </div>
+        <div id="bottomRight" class="panel"> <a href="proyectos/noalaleche/sebuscaacne.jpg" class="noalaleche" rel="noalaleche"><img src="img/menuTwoBottomRight.png" width="129" height="426" /></a> <a href="proyectos/noalaleche/sebuscaosteoporosis.jpg" class="noalaleche" rel="noalaleche"></a> <a href="proyectos/noalaleche/sebuscaobesidad.jpg" class="noalaleche" rel="noalaleche"></a> </div>
+      </div>
+    </div>
+    <div id="multimedia" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a id="darthVader" href="proyectos/multimedia/darthvadergame/DarthVaderBeatEmUp.swf"><img src="img/mmTopLeft.png" width="147" height="188" /></a> </div>
+        <div id="topRight" class="panel"> <a href="http://www.youtube.com/watch?v=esNoRXK73oU" id="diosescaen"><img src="img/mmTopRight.png" width="274" height="258" /></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/multimedia/brownieman/browniemanep1.swf" class="brownieman" rel="brownieman"><img src="img/mmMiddleLeft.png" width="300" height="285" alt="Brownie-Man" /></a> <a href="proyectos/multimedia/brownieman/browniemancomic001.jpg" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/browniemancomic002.jpg" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/browniemancomic003.jpg" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/browniemanposter.jpg" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/angiolette.png" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/bandolero.png" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/fudgey.png" class="brownieman" rel="brownieman"></a> <a href="proyectos/multimedia/brownieman/brownieman.png" class="brownieman" rel="brownieman"></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/multimedia/brownieman/brownieman.png" class="brownieman" rel="brownieman"><img src="img/mmMiddleRight.png" width="118" height="196" alt="Xigraf Promo" /> </div>
+        <div id="bottomLeft" class="panel"> <a href="proyectos/multimedia/yopixel/roggiepixel.gif" class="yopixel" rel="yopixel"><img src="img/mmBottomLeft.png" width="300" height="277" alt="YoPixel" /></a> <a href="proyectos/multimedia/yopixel/crunchpixel.gif" class="yopixel" rel="yopixel"></a> <a href="proyectos/multimedia/yopixel/daliapixel.gif" class="yopixel" rel="yopixel"></a> <a href="proyectos/multimedia/yopixel/gerapixel.gif" class="yopixel" rel="yopixel"></a> </div>
+        <div id="bottomRight" class="panel"> <a href="http://www.youtube.com/watch?v=PvaNtBCxgdQ" id="newcoreBtn"><img src="img/mmBottomRight.png" width="118" height="231" alt="Newcore Promo" /></a> </div>
+      </div>
+    </div>
+    <div id="pizzalove" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="#pizzaandloveManual" class="pizzaandloveBtn" rel="pizzaandloveBtn"><img src="img/plTopLeft.png" width="247" height="155" /></a>
+          <div id="pizzaandloveManual">
+            <object style="width:960px;height:480px" >
+              <param name="movie" value="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf?mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Fdark%2Flayout.xml&amp;showFlipBtn=true&amp;documentId=091210114000-0e55f5ec8f1b4e10a7ac8cf36bcfb6f2&amp;docName=pizzaandlovemanual&amp;username=MrBrownie&amp;loadingInfoText=Manual%20de%20Imagen%20PIZZA%26LOVE&amp;et=1305630031758&amp;er=3" />
+              <param name="allowfullscreen" value="true"/>
+              <param name="menu" value="false"/>
+              <embed src="http://static.issuu.com/webembed/viewers/style1/v1/IssuuViewer.swf" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" style="width:960px;height:480px" flashvars="mode=embed&amp;layout=http%3A%2F%2Fskin.issuu.com%2Fv%2Fdark%2Flayout.xml&amp;showFlipBtn=true&amp;documentId=091210114000-0e55f5ec8f1b4e10a7ac8cf36bcfb6f2&amp;docName=pizzaandlovemanual&amp;username=MrBrownie&amp;loadingInfoText=Manual%20de%20Imagen%20PIZZA%26LOVE&amp;et=1305630031758&amp;er=3" />
+            </object>
+            <div style="width:960px;text-align:left;"></div>
+          </div>
+        </div>
+        <div id="topRight" class="panel"> <a href="proyectos/pizzaandlove/aplicaciones/caja.jpg" class="pizzaandloveBtn" rel="plApp"><img src="img/plTopRight.png" width="176" height="152" /></a> <a href="proyectos/pizzaandlove/aplicaciones/pizzamoto01.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/aplicaciones/pizzamoto02.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/web/pizzaandloveweb.png" class="pizzaandloveBtn" rel="pizzaandloveBtn"><img src="img/plMiddleLeft.png" width="210" height="261" /></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/pizzaandlove/mascota/rolandopalette.png" class="pizzaandloveBtn" rel="pizzaandloveBtn"><img src="img/plMiddleRight.png" width="209" height="205" /></a> </div>
+        <div id="bottomCenter" class="panel"> <a href="proyectos/pizzaandlove/volantes/volantefamiliar.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"><img src="img/plBottomCenter.png" width="435" height="319" /></a> <a href="proyectos/pizzaandlove/volantes/menufamiliar.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volantediciembre.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/menudiciembre.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volantevalentin.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/menuvalentin.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volantemamas.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volantepapas.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/menunuevo.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volantevacaciones.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> <a href="proyectos/pizzaandlove/volantes/volanteinvierno.jpg" class="pizzaandloveBtn" rel="pizzaandloveBtn"></a> </div>
+      </div>
+    </div>
+    <div id="banners" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="proyectos/banners/bulletstorm.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerTopLeft.png" width="118" height="152" /></a> </div>
+        <div id="topCenter" class="panel"> <a href="proyectos/banners/crysis2.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerTopCenter.png" width="139" height="152" /></a> </div>
+        <div id="topRight" class="panel"> <a href="proyectos/banners/deadspace2.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerTopRight.png" width="144" height="152" /></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/banners/dragonage2.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerMiddleLeft.png" width="118" height="260" /></a> </div>
+        <div id="middleCenter" class="panel"> <a href="proyectos/banners/fightnightchampion.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerMiddleCenter.png" width="139" height="225" /></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/banners/suckerpunch.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerMiddleRight.png" width="144" height="187" /></a> </div>
+        <div id="bottomLeft" class="panel"> <a href="proyectos/banners/shift2.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerBottomLeft.png" width="298" height="287" /></a> </div>
+        <div id="bottomRight" class="panel"> <a href="proyectos/banners/portal2.html" class="bannerBtn" rel="bannerBtn"><img src="img/bannerBottomRight.png" width="116" height="319" /></a> </div>
+      </div>
+    </div>
+    <div id="cg" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="proyectos/3d/felux.png" class="cgBtn" rel="cgBtn"><img src="img/3DTopLeft.png" width="300" height="151"/></a> </div>
+        <div id="topRight" class="panel"> <a href="proyectos/3d/bender.png" class="cgBtn" rel="cgBtn"><img src="img/3DTopRight.png"/></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/3d/trofeo.png" class="cgBtn" rel="cgBtn"><img src="img/3DMiddleLeft.png"/></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/3d/salas.jpg" class="cgBtn" rel="cgBtn"><img src="img/3DMiddleRight.png"/></a> <a href="http://www.youtube.com/v/9ynpmEPZs3Q" id="cgSalas" class="cgBtn" rel="cgBtn"></a> </div>
+        <div id="lowCenter" class="panel"> <a href="proyectos/3d/tumbler.png" class="cgBtn" rel="cgBtn"><img src="img/3DLowCenter.png"/></a> </div>
+        <div id="bottomLeft" class="panel"> <a href="proyectos/3d/llanta.png" class="cgBtn" rel="cgBtn"><img src="img/3DBottomLeft.png"/></a> </div>
+        <div id="bottomRight" class="panel"> <a href="proyectos/3d/torre.png" class="cgBtn" rel="cgBtn"><img src="img/3DBottomRight.png"/></a> </div>
+      </div>
+    </div>
+    <div id="ids" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="proyectos/identidad/xigraf/xigraflogo01.jpg" class="ids" rel="ids"><img src="img/idTopLeft.png" width="271" height="152"  /></a> <a href="proyectos/identidad/xigraf/xigraflogo02.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/xigraf/xigraflogo03.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/xigraf/xigrafdraft.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/xigraf/xigrafcartel.jpg" class="ids" rel="ids"></a> </div>
+        <div id="topRight" class="panel"> <a href="proyectos/identidad/yellowbrownies/yellowbrowniescdfront.jpg" class="ids" rel="ids"><img src="img/idTopRight.png" width="143" height="152" /></a> <a href="proyectos/identidad/yellowbrownies/yellowbrowniescdback.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies01.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies02.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies03.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies04.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies05.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/yellowbrownies/yellowbrownies06.jpg" class="ids" rel="ids"></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/identidad/carnitas/carnitas01.png" class="ids" rel="ids"><img src="img/idMiddleLeft.png" width="271" height="258" /></a> <a href="proyectos/identidad/carnitas/carnitas02.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/carnitas/carnitas03.jpg" class="ids" rel="ids"></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/identidad/cabronachos/cabronachoslogo04.png" class="ids" rel="ids"><img src="img/idMiddleRight.png" width="143" height="186" /></a> <a href="proyectos/identidad/cabronachos/cabronachoslogo03.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachoslogo02.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachoslogo01.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachosmenu.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachosmenugrande.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachosflyer.jpg" class="ids" rel="ids"></a> <a href="proyectos/identidad/cabronachos/cabronachosposter.jpg" class="ids" rel="ids"></a> </div>
+        <div id="bottomCenter" class="panel"> <a href="proyectos/identidad/zhero/zherologo.jpg" class="ids" rel="ids"><img src="img/idBottomCenter.png" width="435" height="320"/></a> <a href="proyectos/identidad/zhero/zherospiderman.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/zhero/zherobatman.png" class="ids" rel="ids"></a> </div>
+      </div>
+    </div>
+    <div id="logos" class="sheet">
+      <div class="grid">
+        <div id="topLeft"  class="panel"> <a href="proyectos/identidad/logos/cetabem.png" class="ids" rel="ids"><img src="img/logoTopLeft.png" width="146" height="153"/></a> </div>
+        <div id="topCenter" class="panel"> <a href="proyectos/identidad/logos/greenville.png" class="ids" rel="ids"><img src="img/logoTopCenter.png" width="141" height="153" /></a> </div>
+        <div id="topRight" class="panel"> <a href="proyectos/identidad/logos/muebleriamihogar.png" class="ids" rel="ids"><img src="img/logoTopRight.png"  width="119" height="153"/></a> </div>
+        <div id="middleLeft" class="panel"> <a href="proyectos/identidad/logos/bajapizza.png" class="ids" rel="ids"><img src="img/logoMiddleLeft.png"  width="146" height="191"/></a> </div>
+        <div id="middleCenter" class="panel"> <a href="proyectos/identidad/logos/geeksigner.png" class="ids" rel="ids"><img src="img/logoMiddleCenter.png" width="141" height="228" /></a> </div>
+        <div id="middleRight" class="panel"> <a href="proyectos/identidad/logos/zamna.png" class="ids" rel="ids"><img src="img/logoMiddleRight.png" width="119" height="260"/></a> </div>
+        <div id="lowCenter" class="panel"> <a href="proyectos/identidad/logos/huitzilopoztli.png" class="ids" rel="ids"><img src="img/logoLowCenter.png" width="437" height="155" /></a> </div>
+        <div id="bottomLeft" class="panel"> <a href="proyectos/identidad/logos/erzoproductions.png" class="ids" rel="ids"><img src="img/logoBottomLeft.png" width="146" height="153" /></a> </div>
+        <div id="bottomCenter" class="panel"> <a href="proyectos/identidad/logos/griselda.png" class="ids" rel="ids"><img src="img/logoBottomCenter.png" width="141" height="153" /></a> </div>
+        <div id="bottomRight" class="panel"> <a href="proyectos/identidad/logos/dannygranel.png" class="ids" rel="ids"><img src="img/logoBottomRight.png" width="119"  height="153"/></a> <a href="proyectos/identidad/logos/martatortillas.png" class="ids" rel="ids"></a> <a href="proyectos/identidad/logos/lucheeo.png" class="ids" rel="ids"></a> </div>
+      </div>
+    </div>
+    <div id="backcover">
+      <div class="grid">
+        <div id="bottomCenter" class="panel"> <a href="http://idgdtj.blogspot.com"><img src="img/patrocinio.png" width="374" height="236" /></a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(function() {
+	//single book
+	$('#mybook').booklet({
+		name:"RAEX Awesome Adventures, Issue #001",
+		closed: true,
+		covers: true,
+		pagePadding: 0,
+		width:960,
+		height:800,
+		speed:500,
+		manual:true,
+		overlays:false,
+		arrows:true,
+		arrowsHide:true,
+		direction:"LTR",
+		hash:true,
+	});
+});
+
+</script>
+</body>
+</html>

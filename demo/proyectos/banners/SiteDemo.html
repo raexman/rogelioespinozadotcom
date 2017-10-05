@@ -1,0 +1,201 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/LevelUpGallery.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Level UP Rich Media Demos</title>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+.ifreim {
+	display: block;
+	height: autop;
+	width: 960px;
+}
+</style>
+
+<!-- InstanceEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background: #000;
+	margin: 0;
+	padding: 0;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+#gallery {
+	background-image: url(images/gradientblackgray1.png);
+	background-repeat: repeat-x;
+	margin: 0 auto 0 auto;
+}
+#gallery img {
+	border: 1px #666 solid;
+	padding: 2px;
+	margin: 15px 4px 15px 4px;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+	color: #fff;
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds the other divs ~~ */
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	background-color: #222;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background: #000000;
+}
+
+/* ~~ This is the layout information. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the div. The elements within this div have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+*/
+
+.content {
+	padding: 10px 0;
+	height: 100%;
+	background-image: url(images/gradientblackgrayrelfect1.png);
+	background-repeat: repeat-y;
+}
+.content h1{
+	background:#333
+}
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #333;
+	height: 100%;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+-->
+</style><script type="text/javascript">
+function changeContent(demo)
+{
+	switch(demo)
+	{
+		case 'bulletstorm' :
+		document.getElementById('ifreim').src = "BSLeaderboard.html";
+		document.getElementById('gameName').innerHTML = 'BulletStorm';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'crysis2':
+		document.getElementById('ifreim').src = "CRY2Leaderboard.html";
+		document.getElementById('gameName').innerHTML = 'Crysis 2';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'deadspace2':
+		document.getElementById('ifreim').src = "DS2Takeover.html";
+		document.getElementById('gameName').innerHTML = 'Dead Space 2';
+		document.getElementById('bannerType').innerHTML = 'Take Over Banner';
+		break;
+		case 'dragonage2':
+		document.getElementById('ifreim').src = "DA2Leaderboard.html";	
+		document.getElementById('gameName').innerHTML = 'Dragon Age II';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'fnc':
+		document.getElementById('ifreim').src = "FNCLeaderboard.html";
+		document.getElementById('gameName').innerHTML = 'Fight Night Champion';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'shift2':
+		document.getElementById('ifreim').src = "SHIFT2Leaderboard.html";
+		document.getElementById('gameName').innerHTML = 'SHIFT 2 Unleashed';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'portal2':
+		document.getElementById('ifreim').src = "PO2Leaderboard.html";
+		document.getElementById('gameName').innerHTML = 'Portal 2';
+		document.getElementById('bannerType').innerHTML = 'Expandable Leaderboard Banner';
+		break;
+		case 'suckerpunch':
+		document.getElementById('ifreim').src = "SPTakeover.html";
+		document.getElementById('gameName').innerHTML = 'SuckerPunch';
+		document.getElementById('bannerType').innerHTML = '3D Take Over Banner';
+		break;
+		default:
+		alert("Fail");
+		break;
+		
+	}
+}
+</script></head>
+
+<body>
+
+<div class="container"><!-- InstanceBeginRepeat name="Header" --><!-- InstanceBeginRepeatEntry -->
+<div class="header"><a href="#"><img src="images/levelUplogo.png" alt="Insert Logo Here" name="Insert_logo" width="192" height="52" id="Insert_logo" style="display:inline-block;" /></a>
+  
+  <div id="gallery">
+   <a href="javascript:changeContent('bulletstorm')"><img name="Bulletstorm Pushdown Banner &amp; Adbox"src="images/bulletstorm.png" alt="Bulletstorm Pushdown Banner &amp; Adbox" width="100" height="100" /> </a>
+  <a href="javascript:changeContent('crysis2')"><img src="images/crysis2.png" alt="Crysis2 Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('deadspace2')"><img src="images/deadspace2.png" alt="Dead Space 2 Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('dragonage2')"><img src="images/dragonage2.png" alt="Dragon Age II Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('fnc')"><img src="images/fnc.png" alt="Fight Night Champion Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('shift2')"><img src="images/shift2.png" alt="SHIFT 2 Unleashed Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('portal2')"><img src="images/portal2.png" alt="Portal 2 Pushdown Banner &amp; Adbox" width="100" height="100" /></a> 
+  <a href="javascript:changeContent('suckerpunch')"><img src="images/suckerpunch.png" alt="Sucker Punch 3D Take Over Banner" width="100" height="100" /></a> 
+  </div>
+  <!-- end .header -->
+</div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat --><!-- InstanceBeginEditable name="Content" -->
+<div class="content">
+<h3 id="gameName">BulletStorm</h3>
+<h5 id="bannerType">Expandable Leaderboard Banner</h5>
+
+<iframe id="ifreim" width="960" height="1680" src="BSLeaderboard.html"></iframe>
+  <!-- end .content -->
+</div>
+<!-- InstanceEndEditable --><!-- InstanceBeginRepeat name="Footer" --><!-- InstanceBeginRepeatEntry -->
+<div class="footer">
+    <p>&nbsp;</p>
+  <!-- end .footer -->
+  </div>
+  <!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+  <!-- end .container --></div>
+</body>
+<!-- InstanceEnd --></html>

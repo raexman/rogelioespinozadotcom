@@ -1,0 +1,359 @@
+@charset "UTF-8";
+body
+{
+	background-image:url(../img/RAEX---Bg.jpg);
+	background-color:#000;
+	background-attachment:fixed;
+	background-position:top;
+}
+#logo
+{
+	background-image:url(../img/logobar.png);
+	background-repeat:repeat-x;
+	background-position:center;
+	margin:auto;
+	position:relative;
+	text-align:center;
+	font-size:1px;
+	width:100%;
+}
+#logo p, #message p
+{
+	text-indent:-9999px;
+}
+div#issue
+{
+	width:960px;
+	margin:auto;
+	background:url(../img/sombra.png), center, repeat-y;
+}
+div.sheet
+{
+	width:480px;
+	height:800px;
+	margin:0px;
+	float:left;
+	box-shadow:5px 5px 20px #000;
+}
+
+div.grid
+{
+	width:436px;
+	height:700px;
+	margin:auto;
+	margin-top:35px;
+}
+div.panel
+{
+	background:#000;
+	background-repeat:no-repeat;
+	display:inline-block;
+	position:relative;
+	opacity:.75;
+}
+div.panel a
+{
+	width:100%;
+	height:100%;
+}
+
+/* -------------------- 1.- MENU ONE -------------------- */
+
+	div#menu1 div#topLeft
+	{
+		background:url(../img/menuOneTopLeft.png);
+		width:287px;
+		height:132px;
+		margin-right:9px;
+		margin-bottom: 9px;
+	}
+	div#menu1 div#topRight
+	{
+		background:url(../img/menuOneTopRight.png);
+		width:134px;
+		height:133px;
+		margin-bottom: 9px;
+	}
+		div#menu1 div#middleLeft
+		{
+			background:url(../img/menuOneMiddleLeft.png);
+			width:147px;
+			height:169px;
+			top:-62px;
+			margin-right:9px;
+		}
+		div#menu1 div#middleRight
+		{
+			background:url(../img/menuOneMiddleRight.png);
+			width:273px;
+			height:231px;
+		}
+
+			div#menu1 div#lowCenter
+			{
+				background:url(../img/menuOneLowCenter.png);
+				width:435px;
+				height:137px;
+				top:-84px;
+			}
+				div#menu1 div#bottomLeft
+				{
+					background:url(../img/menuOneBottomLeft.png);
+					width:302px;
+					height:215px;
+					margin-right:9px;
+					top:-72px;
+				}
+				div#menu1 div#bottomRight
+				{
+					background:url(../img/menuOneBottomRight.png);
+					width:118px;
+					height:215px;
+					top:-72px;
+				}
+
+/* -------------------- 2.- MENU TWO -------------------- */
+
+	div#menu2 div#topCenter
+	{
+		background:url(../img/menuTwoTopCenter.png);
+		width:437px;
+		height:152px;
+		margin-bottom:9px;
+		margin-right:9px;
+	}
+		div#menu2 div#middleCenter
+		{
+			background:url(../img/menuTwoMiddleCenter.png);
+			width:435px;
+			height:155px;
+		}
+			div#menu2 div#bottomLeft
+			{
+				background:url(../img/menuTwoBottomLeft.png);
+				width:137px;
+				height:354px;
+				top:-94px;
+				margin-right:9px;
+			}
+			div#menu2 div#bottomCenter
+			{
+				background:url(../img/menuTwoBottomCenter.png);
+				width:135px;
+				height:391px;
+				top:-94px;
+				margin-right:9px;
+			}
+			div#menu2 div#bottomRight
+			{
+				background:url(../img/menuTwoBottomRight.png);
+				width:129px;
+				height:426px;
+				top:-94px;
+			}
+
+/* -------------------- 3.- MULTIMEDIA -------------------- */
+
+	div#multimedia div#topLeft
+	{
+		background:url(../img/mmTopLeft.png);
+		width:147px;
+		height:188px;
+		top:-70px;
+		margin-right:9px;
+		margin-bottom: 9px;
+	}
+	div#multimedia div#topRight
+	{
+		background:url(../img/mmTopRight.png);
+		width:274px;
+		height:258px;
+		margin-bottom: 9px;
+	}
+		div#multimedia div#middleLeft
+		{
+			background:url(../img/mmMiddleLeft.png);
+			width:300px;
+			height:285px;
+			margin-right:9px;
+			top:-106px;
+		}
+		div#multimedia div#middleRight
+		{
+			background:url(../img/mmMiddleRight.png);
+			width:118px;
+			height:196px;
+			top:-119px;
+		}
+			div#multimedia div#bottomLeft
+			{
+				background:url(../img/mmBottomLeft.png);
+				width:300px;
+				height:277px;
+				margin-right:9px;
+				top:-183px;
+			}
+			div#multimedia div#bottomRight
+			{
+				background:url(../img/mmBottomRight.png);
+				width:118px;
+				height:231px;
+				top:-183px;
+			}
+
+/* -------------------- 4.- PIZZA&LOVE -------------------- */
+
+	div#pizzalove div#topLeft
+	{
+		background:url(../img/plTopLeft.png);
+		width:247px;
+		height:155px;
+		top:0px;
+		margin-bottom: 9px;
+		margin-right:9px;
+	}
+	div#pizzalove div#topRight
+	{
+		background:url(../img/plTopRight.png);
+		width:176px;
+		height:152px;
+		margin-bottom: 9px;
+		right:0px;
+	}
+		div#pizzalove div#middleLeft
+		{
+			background:url(../img/plMiddleLeft.png);
+			width:210px;
+			height:261px;
+			margin-right:9px;
+		}
+		div#pizzalove div#middleRight
+		{
+			background:url(../img/plMiddleRight.png);
+			width:209px;
+			height:205px;
+			top:-56px;
+		}
+			div#pizzalove div#bottomCenter
+			{
+				background:url(../img/plBottomCenter.png);
+				width:435px;
+				height:319px;
+				margin-right:0;
+				top:-97px;
+			}
+/* -------------------- 5.- BANNERS -------------------- */
+	div#banners div#topLeft
+	{
+		background:url(../img/bannerTopLeft.png);
+		width:118px;
+		height:152px;
+		margin-bottom:9px;
+		margin-right:9px;
+	}
+	div#banners div#topCenter
+	{
+		background:url(../img/bannerTopCenter.png);
+		width:139px;
+		height:152px;
+		margin-bottom:9px;
+		margin-right:9px;
+	}
+	div#banners div#topRight
+	{
+		background:url(../img/bannerTopRight.png);
+		width:144px;
+		height:152px;
+		margin-bottom:9px;
+	}
+		div#banners div#middleLeft
+		{
+			background:url(../img/bannerMiddleLeft.png);
+			width:118px;
+			height:260px;
+			margin-right:9px;
+		}
+		div#banners div#middleCenter
+		{
+			background:url(../img/bannerMiddleCenter.png);
+			width:139px;
+			height:225px;
+			top:-35px;
+			margin-right:9px;
+		}
+		div#banners div#middleRight
+		{
+			background:url(../img/bannerMiddleRight.png);
+			width:144px;
+			height:187px;
+			top:-73px;
+		}
+			div#banners div#bottomLeft
+			{
+				background:url(../img/bannerBottomLeft.png);
+				width:296px;
+				height:287px;
+				margin-right:9px;
+				top:-100px;
+			}
+			div#banners div#bottomRight
+			{
+				background:url(../img/bannerBottomRight.png);
+				width:116px;
+				height:319px;
+				top:-100px;
+			}
+/* -------------------- 6.- CG -------------------- */
+
+	div#cg div#topLeft
+	{
+		background:url(../img/3DTopLeft.png);
+		width:300px;
+		height:151px;
+		margin-right:9px;
+		margin-bottom: 9px;
+	}
+	div#cg div#topRight
+	{
+		background:url(../img/3DTopRight.png);
+		width:119px;
+		height:151px;
+		margin-bottom: 9px;
+	}
+		div#cg div#middleLeft
+		{
+			background:url(../img/3DMiddleLeft.png);
+			width:145px;
+			height:193px;
+			top:-71px;
+			margin-right:9px;
+		}
+		div#cg div#middleRight
+		{
+			background:url(../img/3DMiddleRight.png);
+			width:274px;
+			height:264px;
+		}
+
+			div#cg div#lowCenter
+			{
+				background:url(../img/3DLowCenter.png);
+				width:435px;
+				height:156px;
+				top:-97px;
+			}
+				div#cg div#bottomLeft
+				{
+					background:url(../img/3DBottomLeft.png);
+					width:301px;
+					height:152px;
+					margin-right:9px;
+					top:-84px;
+				}
+				div#cg div#bottomRight
+				{
+					background:url(../img/3DBottomRight.png);
+					width:119px;
+					height:152px;
+					top:-84px;
+				}
